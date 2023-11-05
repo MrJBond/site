@@ -1,0 +1,34 @@
+body {
+    background-color: #000;
+}
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Style contact information and form sections */
+.contact-info, .contact-form {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Style footer */
+footer {
+    clear: both;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}

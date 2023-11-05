@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main</title>
+	
+	 <!-- Link to CSS file -->
+    <link rel="stylesheet" type="text/css" href="./Main.css">
+	
+	
+    <style>
+		
+		body {
+			text-align: center; /* Center-align the links */
+			margin: 0; /* Remove default body margin */
+			padding: 0; /* Remove default body padding */
+		
+			background-image: url('./logo.png'); 
+			background-size: cover; /* Adjust the image size to cover the entire body */
+			background-repeat: no-repeat; /* Prevent the background image from repeating */
+			background-attachment: fixed; /* Keep the background image fixed while scrolling */
+		}
+		
+		
+		 /* Position the first image */
+        #image1 {
+            position: sticky;
+            top: 13px; /* Position */
+            left: 70%; 
+			width: 100px;
+			border-radius: 15%;
+        }
+
+        /* Position the second image */
+        #image2 {
+            position: sticky;
+            top: 20px; /* Position */
+            left: 60%; 
+			width: 100px;
+			border-radius: 15%;
+        }
+		
+		/* Position the third image */
+        #image3 {
+            position: sticky;
+            top: 20px; /* Position */
+            left: 10%; 
+			width: 100px;
+			border-radius: 15%;
+        }
+		/* Position the fourth image */
+        #image4 {
+            position: sticky;
+            top: 20px; /* Position */
+            left: 32%; 
+			width: 40px;
+			border-radius: 15%;
+        }
+
+    </style>	
+</head>
+<body>
+	    <!-- Header -->
+    <div class="header">
+	
+		<!-- Logo -->
+        <div class="logo">
+            <img src=".\logo.png" alt="logo" width="50" style="border-radius: 15%;">
+        </div>
+
+		<img id="image3" src="./mark3.png" alt="Image 3">
+		<img id="image4" src="./mark4.png" alt="Image 4">
+		
+		<button class="login-button" onclick="window.open('./Login.html', '_blank')">Log in</button>
+		
+		<img id="image2" src="./mark2.png" alt="Image 2" >
+		<img id="image1" src="./mark1.png" alt="Image 1" >
+		
+
+        <!-- Navigation -->
+        <ul class="navigation">
+            <li><a href=".\index.html" target="_blank" class = "different-color">Main</a></li>
+            <li><a href=".\Catalog.html" target="_blank" class = "different-color">Catalog</a></li>
+            <li><a href=".\Contacts.html" target="_blank" class = "different-color">Contacts</a></li>
+        </ul>
+		
+		<!--Dropdown menu for mobile-->
+	<div class="dropdown">
+        <button class="another-button">Menu</button>
+        <div class="dropdown-content">
+            <a href=".\Main.html" target="_blank" class = "different-color">Main</a>
+            <a href=".\Catalog.html" target="_blank" class = "different-color">Catalog</a>
+            <a href=".\Contacts.html" target="_blank" class = "different-color">Contacts</a>
+        </div>
+    </div>
+		
+    </div>
+
+		<!--Container-->
+		<div class = "wrapper">
+
+					<div class="card">
+						<main class = "product-card">
+						<section>
+			
+						<!-- Product card -->
+						<article>
+							<img src=".\car.png" alt="Product Image" width="150" style="border-radius: 15%;">
+							<p class = "product-title"><strong>AGGRESSIVELY ELEGANT</strong></p>
+							<header class = "product-title"><strong>Chevrolet Camaro</strong></header>
+							<p class = "product-price"> 
+								From its instantly recognizable athletic appearance to its refined, driver-focused interior, 
+								the 2024 Camaro is a stylish and powerful extension of anyone who gets behind its wheel.</p>
+							<p class = "product-price">Price: $30.000</p>
+						<button class="another-button" onclick="window.open('./Success.html', '_blank')">Add to Cart</button>
+						</article>
+						</section>
+						</main>
+	
+				<li><a href=".\Project.html" target="_blank" class = "different-color">Read more</a></li>
+	
+					</div>
+				
+            <div class="card">
+				<main class = "product-card">
+					<section>
+			
+					<!-- Product card -->
+					<article>
+						<img src=".\car2.png" alt="Product Image" width="150" style="border-radius: 15%;">
+						<header class = "product-title"><strong>Lamborghini Huracán</strong></header>
+						<p class = "product-price"> 
+							Lamborghini is a brand known for its extroverted styling and brash performance, 
+							which is embodied perfectly by the V-10–powered Huracán supercar. 
+							With 600-plus horsepower roaring just behind the cabin, the Huracán delivers heart-pounding 
+							acceleration with a spine-tingling soundtrack to match. </p>
+						<p class = "product-price">Price: $200.000</p>
+					<button class="another-button" onclick="window.open('./Success.html', '_blank')">Add to Cart</button>
+					</article>
+					</section>
+					</main>
+	
+				<li><a href=".\Lamborghini.html" target="_blank" class = "different-color">Read more</a></li>
+				
+            </div>
+			
+            <div class="card">
+				<main class = "product-card">
+					<section>
+			
+					<!-- Product card -->
+					<article>
+						<img src=".\car3.png" alt="Product Image" width="150" style="border-radius: 15%;">
+						<header class = "product-title"><strong>Mercedes-AMG GT</strong></header>
+						<p class = "product-price"> 
+							Practicality isn't usually part of a fully baked sports car's repertoire, 
+							but the Mercedes-AMG GT deftly rides that line. Of course, the idea of living day in, 
+							day out with a long, lithe performance machine is not at the top of everyone's to-do list, 
+							but those who choose to make the most out of their GT purchase won't be let down. No matter 
+							the intended purpose, the refreshed 2020 GT will delight. </p>
+						<p class = "product-price">Price: $100.000</p>
+					<button class="another-button" onclick="window.open('./Success.html', '_blank')">Add to Cart</button>
+					</article>
+					</section>
+					</main>
+	
+				<li><a href=".\Mercedes.html" target="_blank" class = "different-color">Read more</a></li>
+			
+			</div>
+		
+            <div class="card">
+				<main class = "product-card">
+					<section>
+			
+					<!-- Product card -->
+					<article>
+						<img src=".\car4.png" alt="Product Image" width="150" style="border-radius: 15%;">
+						<header class = "product-title"><strong>Ferrari Portofino M</strong></header>
+						<p class = "product-price"> 
+							The Portofino M hardtop-convertible is one of the more restrained models in the Ferrari 
+							lineup, aimed as much at comfortable cruising on sunny days as it is at high-speed thrills </p>
+						<p class = "product-price">Price: $250.000</p>
+					<button class="another-button" onclick="window.open('./Success.html', '_blank')">Add to Cart</button>
+					</article>
+					</section>
+					</main>
+	
+				<li><a href=".\Ferrari.html" target="_blank" class = "different-color">Read more</a></li>
+            </div>
+			
+			<div class="card">
+				<main class = "product-card">
+					<section>
+			
+					<!-- Product card -->
+					<article>
+						<img src=".\car5.png" alt="Product Image" width="150" style="border-radius: 15%;">
+						<header class = "product-title"><strong>Ferrari 812 GTS</strong></header>
+						<p class = "product-price"> 
+							The Ferrari 812 GTS is everything a Ferrari should be. It’s painfully gorgeous and upholstered 
+							with the finest Italian leather, but those details are just a warmup for the naturally aspirated, 
+							789-hp V-12 engine. Comically fast, the front-mounted V-12 sings the maker’s siren song as 
+							conducted by the driver’s right foot whenever the mood strikes. </p>
+						<p class = "product-price">Price: $400.000</p>
+					<button class="another-button" onclick="window.open('./Success.html', '_blank')">Add to Cart</button>
+					</article>
+					</section>
+					</main>
+	
+				<li><a href=".\Ferrari1.html" target="_blank" class = "different-color">Read more</a></li>
+            </div>
+			<div class="card">
+				<main class = "product-card">
+					<section>
+			
+					<!-- Product card -->
+					<article>
+						<img src=".\car6.png" alt="Product Image" width="150" style="border-radius: 15%;">
+						<header class = "product-title"><strong>Lamborghini Aventador</strong></header>
+						<p class = "product-price"> 
+								With a raucous 769-hp V-12 engine and an exotic exterior, 
+								the 2022 Lamborghini Aventador is the definition of a hyper car. 
+								While competitors such as the Ferrari SF90 embrace an electrified future, 
+								the Lambo's 12-cylinder mill swills fuel like a frat bro chugs a beer. </p>
+						<p class = "product-price">Price: $500.000</p>
+					<button class="another-button" onclick="window.open('./Success.html', '_blank')">Add to Cart</button>
+					</article>
+					</section>
+					</main>
+	
+				<li><a href=".\Lamborghini1.html" target="_blank" class = "different-color">Read more</a></li>
+            </div>		
+		</div>
+
+</body>
+</html>

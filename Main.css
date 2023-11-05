@@ -1,0 +1,187 @@
+
+.different-color {
+    color: #fff;
+}
+
+.header {
+    display: flex; /* Use flexbox to align the logo and links */
+    justify-content: space-between; /* Place items at the start and end of the container */
+    align-items: center; /* Vertically center items */
+    padding: 10px; /* Add padding to the header for spacing */
+
+
+    background-color: #000; /* Header color */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    margin: 0; /* Remove default margin */
+}
+
+.navigation {
+    list-style-type: none; /* Remove list bullets */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    z-index: 1; /* Move linckes forward to prevent them from hiding when screen is smaller */
+}
+
+ .navigation li {
+     display: inline; /* Display list items horizontally */
+     margin-right: 20px; /* Add space between navigation items */
+ }
+
+.login-button {
+    position: sticky; /*Elements are positioned based on the user's scroll position.*/
+    /* Center the button horizontally */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #ff0000; /* Text color */
+    padding: 10px 20px;
+    border: none; /* Turn the border off */
+    border-radius: 5px; /* Round the corners*/
+    text-decoration: none; /* Turn the decoration off*/
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 10px 10px #fff; /* offset-x | offset-y | blur-radius | spread-radius | color */
+    transition: box-shadow 0.3s ease; /* Add a transition to the box-shadow property */
+}
+
+.login-button:hover {
+    box-shadow: 0 0 40px gold; /* Change the box-shadow on hover */
+}
+/*Container*/
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    width: 100%; /*The container takes up the entire available width if the screen is smaller*/
+    overflow-wrap: break-word; /*Allows text to wrap to new lines*/
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-gap: 20px; /* Spacing between items */
+}
+
+.card {
+    flex-basis: calc(33.33% - 20px); /* 3 cards in a row with space */
+    margin-right: 20px; /* Space between cards */
+    margin-bottom: 20px; /* Space between rows */
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 10px #fff; /* offset-x | offset-y | blur-radius | spread-radius | color */
+
+    transition: box-shadow 0.3s ease; /* Add a transition to the box-shadow property */
+}
+.card:hover {
+    box-shadow: 0 0 40px gold; /* Change the box-shadow on hover */
+}
+
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Round the corners*/
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+
+.product-title {
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff; /*Text color*/
+    text-decoration: overline;
+}
+
+.product-price {
+    font-size: 10px;
+    color: #fff; /* Text color */
+}
+
+
+.another-button {
+    position: sticky; /*Elements are positioned based on the user's scroll position.*/
+    background-color: #000;
+    color: #ff0000; /* Text color */
+    padding: 10px 20px;
+    border: none; /* Turn the border off */
+    border-radius: 5px; /* Round the corners*/
+    text-decoration: none; /* Turn the decoration off*/
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 10px 10px #fff; /* offset-x | offset-y | blur-radius | spread-radius | color */
+    transition: box-shadow 0.3s ease; /* Add a transition to the box-shadow property */
+}
+
+.another-button:hover {
+    box-shadow: 0 0 40px gold; /* Change the box-shadow on hover */
+}
+.wrapper::before {
+    content: "Top";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 70px;
+    position: absolute;
+    top: 5;
+    left: 5%;
+}
+
+
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: #fff;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Add a media query for screens 960 pixels wide */
+@media (max-width: 960px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+}
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+    }
+
+    .card {
+        width: 100%; /* Make the cards take up the full width of the container */
+    }
+
+    .navigation {
+        display: none; /* Hide navigation */
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+}
+

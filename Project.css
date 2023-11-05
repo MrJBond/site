@@ -1,0 +1,85 @@
+.different-color {
+    color: #fff;
+}
+.header {
+    display: flex; /* Use flexbox to align the logo and links */
+    justify-content: space-between; /* Place items at the start and end of the container */
+    align-items: center; /* Vertically center items */
+    padding: 10px; /* Add padding to the header for spacing */
+
+
+    background-color: #000; /* Header color */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    margin: 0; /* Remove default margin */
+}
+
+.navigation {
+    list-style-type: none; /* Remove list bullets */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+ .navigation li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add space between navigation items */
+ }
+
+
+.login-button {
+    position: sticky; /*Elements are positioned based on the user's scroll position.*/
+    /* Center the button horizontally */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #ff0000; /* Text color */
+    padding: 10px 20px;
+    border: none; /* Turn the border off */
+    border-radius: 5px; /* Round the corners*/
+    text-decoration: none; /* Turn the decoration off*/
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 10px 10px #fff; /* offset-x | offset-y | blur-radius | spread-radius | color */
+    transition: box-shadow 0.3s ease; /* Add a transition to the box-shadow property */
+}
+
+.login-button:hover {
+    box-shadow: 0 0 40px gold; /* Change the box-shadow on hover */
+}
+
+    .product-card {
+        border: 1px solid #ccc;
+        border-radius: 10px; /* Round the corners*/
+        padding: 10px; 
+        font-family: Arial, sans-serif; 
+        background-color: #000; 
+    }
+
+.product-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff; /*Text color*/
+    text-decoration: overline;
+}
+
+    .product-price {
+        font-size: 30px; 
+        color: #fff; /* Text color */
+    }
+
+/* Change color when screen width is less than 700px */
+@media (max-width: 700px) {
+
+    .product-price {
+        font-size: 30px;
+        color: #000; /* Text color */
+    }
+    .product-card {
+        background-color: #fff;
+    }
+
+}
